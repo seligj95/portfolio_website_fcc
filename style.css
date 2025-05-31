@@ -1,12 +1,69 @@
-/* display background color black on navbar scroll */
+/* Set main font to Helvetica */
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+/* Header with logo */
+.site-header {
+    background-color: white;
+    padding: 3rem 0;
+}
+
+.header-logo {
+    height: 120px;
+}
+
+/* Make navbar bigger */
+.navbar {
+    padding: 1.5rem 0 !important;
+    min-height: 80px;
+    position: relative !important;
+    top: 0;
+    background-color: white !important;
+}
+
+.navbar-brand img {
+    height: 60px !important;
+}
+
+/* Center navbar items */
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 0.75rem 1rem !important;
+    color: black !important;
+}
+
+/* When navbar becomes fixed on scroll */
+.navbar.fixed-navbar {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+/* Active/current page styling */
+.navbar-nav .nav-item.active .nav-link {
+    color: #CC9900 !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #CC9900 !important;
+}
+
+/* display background color white on navbar scroll */
 .navbarScroll.navbarDark {
-    background-color: black;
+    background-color: white !important;
 }
 
 /* hero background image */
 .bgimage {
     height:100vh;
-    background: url('images/heroImage.jpeg');
+    background: url('images/heroimage.jpg');
     background-size:cover;
     position:relative;
 }
